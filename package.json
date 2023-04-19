@@ -1,7 +1,7 @@
 {
   "name": "trialtaskbot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "type": "module",
   "scripts": {

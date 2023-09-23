@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "rimraf ./dist && npm run pretty && npm run build && npm run lint && node --no-warnings dist/index.js",
+    "start": "rimraf ./dist && npm run build && node --no-warnings dist/index.js",
     "lint": "eslint src --ext .ts --fix",
     "pretty": "prettier -w ./src"
   },

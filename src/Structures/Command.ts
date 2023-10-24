@@ -1,4 +1,5 @@
 import {
+  AutocompleteInteraction,
   ChatInputCommandInteraction,
   GuildMember,
   SlashCommandBuilder,
@@ -15,7 +16,11 @@ export default class Command {
     client: Client,
     interaction: ChatInputCommandInteraction,
     member: GuildMember
-  ) => Promise<void>;
+  ) => any;
+  readonly autocomplete?: (
+    client: Client,
+    interaction: AutocompleteInteraction
+  ) => any;
   constructor(obj: {
     data:
       | SlashCommandBuilder
@@ -25,7 +30,11 @@ export default class Command {
       client: Client,
       interaction: ChatInputCommandInteraction,
       member: GuildMember
-    ) => Promise<void>;
+    ) => any;
+    autocomplete?: (
+      client: Client,
+      interaction: AutocompleteInteraction
+    ) => any;
   }) {
     this.data = obj.data;
     this.run = obj.run;

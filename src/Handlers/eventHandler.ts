@@ -2,7 +2,7 @@ import { ClientEvents } from "discord.js";
 import fs from "fs/promises";
 import Client from "../Structures/Client.js";
 import Event from "../Structures/Event.js";
-async function EventHandler(client: Client) {
+async function eventHandler(client: Client) {
   const dirs = await fs.readdir("./dist/Events");
 
   dirs.forEach(async (dir) => {
@@ -29,4 +29,4 @@ async function EventHandler(client: Client) {
   });
 }
 
-export default EventHandler;
+export default eventHandler;

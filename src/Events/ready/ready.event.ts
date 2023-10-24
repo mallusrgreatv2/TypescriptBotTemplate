@@ -8,10 +8,13 @@ export default new Event({
       message: `Bot logged in as ${client.user?.tag}`,
     });
     const commands = client.commands.map((command) => command.data.toJSON());
-    if (client.config.COMMANDS_GUILD_ONLY === "true") await client.guilds.cache
-      .get(client.config.GUILD_ID.toString())
-      ?.commands.set(commands);
-    else await client.application
-    ?.commands.set(commands);
+    const contextMenus = client.contextMenus.map((command) =>
+      command.data.toJSON()
+    );
+    if (client.config.COMMANDS_GUILD_ONLY === "true")
+      await client.guilds.cache
+        .get(client.config.GUILD_ID.toString())
+        ?.commands.set([...commands, ...contextMenus]);
+    else await client.application?.commands.set([...commands, ...contextMenus]);
   },
 });

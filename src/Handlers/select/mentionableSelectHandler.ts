@@ -11,7 +11,7 @@ export default async function mentionableSelectHandler(client: Client) {
     );
     files.forEach((file: string) => {
       if (!file.endsWith(".select.js")) return;
-      import(`../interactions/SelectMenus/Mentionable/${directory}/${file}`)
+      import(`../../interactions/SelectMenus/Mentionable/${directory}/${file}`)
         .then((imported) => imported.default)
         .then((imported: Select) => {
           client.selects.mentionable.set(imported.customId, imported);

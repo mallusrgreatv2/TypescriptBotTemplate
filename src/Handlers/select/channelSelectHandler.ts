@@ -11,7 +11,7 @@ export default async function channelSelectHandler(client: Client) {
     );
     files.forEach((file: string) => {
       if (!file.endsWith(".select.js")) return;
-      import(`../interactions/SelectMenus/Channel/${directory}/${file}`)
+      import(`../../interactions/SelectMenus/Channel/${directory}/${file}`)
         .then((imported) => imported.default)
         .then((imported: Select) => {
           client.selects.channel.set(imported.customId, imported);

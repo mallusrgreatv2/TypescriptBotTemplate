@@ -1,6 +1,6 @@
-import Button from "../../Structures/Button.js";
+import Modal from "../../../Structures/Modal.js";
 
-export default new Button({
+export default new Modal({
   customId: "example",
   async run(client, interaction) {
     await interaction.reply("Hello!");

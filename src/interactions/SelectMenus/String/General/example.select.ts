@@ -1,4 +1,4 @@
-import StringSelect from "../../../Structures/Select/String.js";
+import StringSelect from "../../../../Structures/Select/String.js";
 
 export default new StringSelect({
   customId: "example",

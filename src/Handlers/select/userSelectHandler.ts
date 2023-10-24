@@ -9,7 +9,7 @@ export default async function userSelectHandler(client: Client) {
     );
     files.forEach((file: string) => {
       if (!file.endsWith(".select.js")) return;
-      import(`../interactions/SelectMenus/User/${directory}/${file}`)
+      import(`../../interactions/SelectMenus/User/${directory}/${file}`)
         .then((imported) => imported.default)
         .then((imported: Select) => {
           client.selects.user.set(imported.customId, imported);

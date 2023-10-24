@@ -11,7 +11,7 @@ export default async function stringSelectHandler(client: Client) {
     );
     files.forEach((file: string) => {
       if (!file.endsWith(".select.js")) return;
-      import(`../interactions/SelectMenus/String/${directory}/${file}`)
+      import(`../../interactions/SelectMenus/String/${directory}/${file}`)
         .then((imported) => imported.default)
         .then((imported: Select) => {
           client.selects.string.set(imported.customId, imported);

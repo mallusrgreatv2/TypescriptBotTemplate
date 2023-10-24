@@ -9,7 +9,7 @@ export default async function roleSelectHandler(client: Client) {
     );
     files.forEach((file: string) => {
       if (!file.endsWith(".select.js")) return;
-      import(`../interactions/SelectMenus/Role/${directory}/${file}`)
+      import(`../../interactions/SelectMenus/Role/${directory}/${file}`)
         .then((imported) => imported.default)
         .then((imported: Select) => {
           client.selects.role.set(imported.customId, imported);

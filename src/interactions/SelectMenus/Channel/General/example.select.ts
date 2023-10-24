@@ -1,6 +1,6 @@
-import RoleSelect from "../../../Structures/Select/Role.js";
+import ChannelSelect from "../../../../Structures/Select/Channel.js";
 
-export default new RoleSelect({
+export default new ChannelSelect({
   customId: "example",
   async run(client, interaction) {
     await interaction.reply("Hello!");

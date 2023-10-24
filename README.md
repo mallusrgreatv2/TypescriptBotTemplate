@@ -1,4 +1,15 @@
 <h1>Typescript Bot Template <span style="color: #36454F; font-size: 21px;"> by mallusrgreat</span><h1>
+<p>
+You'll never have to touch the interactionCreate event, ever again.
+Interactions supported:
+<ul>
+    <li>Slash commands</li>
+    <li>All types of select menus</li>
+    <li>Modals</li>
+    <li>Context menus</li>
+    <li>Buttons</li>
+</ul>
+<p>
 <h2>Setup</h2>
 <ul style="list-style: numbers;">
     <li><code>git clone https://github.com/mallusrgreatv2/TypescriptBotTemplate.git</code></li>

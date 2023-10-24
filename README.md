@@ -1,4 +1,4 @@
-<h1>Typescript Bot Template <span style="color: #36454F; font-size: 21px;"> by mallusrgreat</span><h1>
+<h1>Typescript Bot Template <span style="color: #36454F; font-size: 21px;"> by mallusrgreat</span></h1>
 <p>
 You'll never have to touch the interactionCreate event, ever again.
 Interactions supported:

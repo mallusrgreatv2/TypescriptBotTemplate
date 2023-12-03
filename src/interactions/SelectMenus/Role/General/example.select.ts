@@ -1,4 +1,4 @@
-import RoleSelect from "../../../../Structures/Select/Role.js";
+import RoleSelect from "@/Structures/Select/Role.js";
 
 export default new RoleSelect({
   customId: "example",

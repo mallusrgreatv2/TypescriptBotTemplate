@@ -1,4 +1,4 @@
-import Modal from "../../../Structures/Modal.js";
+import Modal from "@/Structures/Modal.js";
 
 export default new Modal({
   customId: "example",

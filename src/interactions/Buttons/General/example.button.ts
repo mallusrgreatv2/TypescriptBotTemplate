@@ -1,4 +1,4 @@
-import Button from "../../../Structures/Button.js";
+import Button from "@/Structures/Button.js";
 
 export default new Button({
   customId: "example",

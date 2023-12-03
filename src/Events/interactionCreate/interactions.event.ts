@@ -1,5 +1,5 @@
 import { GuildMember } from "discord.js";
-import Event from "../../Structures/Event.js";
+import Event from "@/Structures/Event.js";
 
 export default new Event({
   event: "interactionCreate",
@@ -34,7 +34,7 @@ export default new Event({
         (a) => a.data.name === interaction.commandName
       );
       if (!command) return;
-      await command.autocomplete!(client, interaction);
+      if (command.autocomplete) await command.autocomplete(client, interaction);
     } else if (interaction.isModalSubmit()) {
       const modal = client.modals.find(
         (a) => a.customId === interaction.customId

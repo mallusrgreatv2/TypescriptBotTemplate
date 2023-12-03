@@ -1,6 +1,6 @@
 import { ClientEvents } from "discord.js";
-import Client from "./Client.js";
-import IEvent from "../Interfaces/IEvent.js";
+import Client from "@/Structures/Client.js";
+import IEvent from "@/Interfaces/IEvent.js";
 
 export default class Event<K extends keyof ClientEvents> implements IEvent<K> {
   public event: K;

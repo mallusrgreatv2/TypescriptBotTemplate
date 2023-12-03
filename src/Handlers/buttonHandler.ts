@@ -1,6 +1,6 @@
-import Client from "../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import fs from "fs/promises";
-import Button from "../Structures/Button.js";
+import Button from "@/Structures/Button.js";
 export default async function buttonHandler(client: Client) {
   const directories = await fs.readdir("./dist/interactions/Buttons");
   directories.forEach(async (directory: string) => {

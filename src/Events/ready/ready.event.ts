@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import Event from "../../Structures/Event.js";
+import Event from "@/Structures/Event.js";
 export default new Event({
   event: "ready",
   run: async (client) => {

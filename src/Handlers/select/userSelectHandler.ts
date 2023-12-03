@@ -1,6 +1,6 @@
-import Client from "../../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import fs from "fs/promises";
-import Select from "../../Structures/Select/User.js";
+import Select from "@/Structures/Select/User.js";
 export default async function userSelectHandler(client: Client) {
   const directories = await fs.readdir("./dist/interactions/SelectMenus/User");
   directories.forEach(async (directory: string) => {

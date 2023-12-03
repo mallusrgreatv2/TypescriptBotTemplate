@@ -1,6 +1,6 @@
-import Client from "../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import fs from "fs/promises";
-import Modal from "../Structures/Modal.js";
+import Modal from "@/Structures/Modal.js";
 export default async function modalHandler(client: Client) {
   const directories = await fs.readdir("./dist/interactions/Modals");
   directories.forEach(async (directory: string) => {

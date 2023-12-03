@@ -1,4 +1,4 @@
-import ChannelSelect from "../../../../Structures/Select/Channel.js";
+import ChannelSelect from "@/Structures/Select/Channel.js";
 
 export default new ChannelSelect({
   customId: "example",

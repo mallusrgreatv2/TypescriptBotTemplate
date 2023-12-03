@@ -1,6 +1,6 @@
-import Client from "../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import fs from "fs/promises";
-import ContextMenu from "../Structures/ContextMenu.js";
+import ContextMenu from "@/Structures/ContextMenu.js";
 export default async function contextMenuHandler(client: Client) {
   const directories = await fs.readdir("./dist/interactions/ContextMenus");
   directories.forEach(async (directory: string) => {

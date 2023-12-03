@@ -1,4 +1,4 @@
-import Client from "../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import buttonHandler from "./buttonHandler.js";
 import commandHandler from "./commandHandler.js";
 import contextMenuHandler from "./contextMenuHandler.js";
@@ -24,7 +24,7 @@ export default function initHandlers(client: Client) {
     contextMenuHandler
   );
 }
-function passClient(client: Client, ...funcs: Function[]) {
+function passClient(client: Client, ...funcs: ((client: Client) => any)[]) {
   funcs.forEach((func) => {
     func(client);
   });

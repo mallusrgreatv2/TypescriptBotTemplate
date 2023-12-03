@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "Ystart": "rimraf ./dist && yarn build && node --no-warnings dist/index.js",
     "start": "rimraf ./dist && npm run build && node --no-warnings dist/index.js",
     "lint": "eslint src --ext .ts --fix",
@@ -23,6 +23,7 @@
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
     "rimraf": "^5.0.0",
+    "tsc-alias": "^1.8.8",
     "typescript": "^5.0.4"
   }
 }

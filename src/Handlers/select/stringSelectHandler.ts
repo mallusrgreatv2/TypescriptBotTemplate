@@ -1,6 +1,6 @@
-import Client from "../../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import fs from "fs/promises";
-import Select from "../../Structures/Select/String.js";
+import Select from "@/Structures/Select/String.js";
 export default async function stringSelectHandler(client: Client) {
   const directories = await fs.readdir(
     "./dist/interactions/SelectMenus/String"

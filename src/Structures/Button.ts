@@ -1,5 +1,5 @@
-import { AnySelectMenuInteraction, ButtonInteraction } from "discord.js";
-import Client from "./Client.js";
+import { ButtonInteraction } from "discord.js";
+import Client from "@/Structures/Client.js";
 
 export default class Button {
   readonly customId: string;

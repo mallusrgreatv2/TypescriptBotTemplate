@@ -1,6 +1,6 @@
-import Client from "../../Structures/Client.js";
+import Client from "@/Structures/Client.js";
 import fs from "fs/promises";
-import Select from "../../Structures/Select/Role.js";
+import Select from "@/Structures/Select/Role.js";
 export default async function roleSelectHandler(client: Client) {
   const directories = await fs.readdir("./dist/interactions/SelectMenus/Role");
   directories.forEach(async (directory: string) => {

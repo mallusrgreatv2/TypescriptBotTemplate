@@ -24,5 +24,5 @@ Interactions supported:
     <li>For any interaction or event, name them <code>(name).(command|event|modal|menu|select|button).ts</code></li>
     <li>For disabled commands, name them <code>(name).disabled.ts</code></li>
     <li>After using tabcomplete to import Command class, add a <code>.js</code> suffix to the path.
-    The path should look something like this: <code>../../../Structures/Command.js</code></li>
+    The path should look something like this: <code>@/Structures/Command.js</code></li>
 </ul>

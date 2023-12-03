@@ -1,5 +1,5 @@
 import { ModalSubmitInteraction } from "discord.js";
-import Client from "./Client.js";
+import Client from "@/Structures/Client.js";
 
 export default class Modal {
   readonly customId: string;

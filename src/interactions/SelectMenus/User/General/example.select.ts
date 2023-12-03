@@ -1,4 +1,4 @@
-import UserSelect from "../../../../Structures/Select/User.js";
+import UserSelect from "@/Structures/Select/User.js";
 
 export default new UserSelect({
   customId: "example",

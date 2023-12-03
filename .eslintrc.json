@@ -1,52 +1,56 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended"
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "handle-callback-err": "off",
+    "no-console": "off",
+    "no-constant-condition": "off",
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "no-var": "off",
+    "prefer-const": "off",
+    "quotes": "off",
+    "no-shadow": "off",
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "dot-location": ["error", "property"],
+    "max-nested-callbacks": ["error", { "max": 4 }],
+    "max-statements-per-line": ["error", { "max": 2 }],
+    "no-empty-function": "error",
+    "no-floating-decimal": "error",
+    "no-inline-comments": "error",
+    "no-lonely-if": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 2, "maxEOF": 1, "maxBOF": 0 }
     ],
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {
-      "@typescript-eslint/no-explicit-any": "off",
-      "handle-callback-err": "off",
-      "no-console": "off",
-      "no-constant-condition": "off",
-      "no-unused-vars": "off",
-      "no-undef": "off",
-      "no-var": "off",
-      "prefer-const": "off",
-      "quotes": "off",
-      "no-shadow": "off",
-      "comma-spacing": "error",
-      "comma-style": "error",
-      "dot-location": ["error", "property"],
-      "max-nested-callbacks": ["error", { "max": 4 }],
-      "max-statements-per-line": ["error", { "max": 2 }],
-      "no-empty-function": "error",
-      "no-floating-decimal": "error",
-      "no-inline-comments": "error",
-      "no-lonely-if": "error",
-      "no-multi-spaces": "error",
-      "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 0 }],
-      "no-trailing-spaces": ["error"],
-      "object-curly-spacing": ["error", "always"],
-      "semi": ["warn", "always"],
-      "space-before-blocks": "error",
-      "space-before-function-paren": [
-        "error",
-        { "anonymous": "never", "named": "never", "asyncArrow": "always" }
-      ],
-      "space-in-parens": "error",
-      "space-infix-ops": "error",
-      "space-unary-ops": "error",
-      "spaced-comment": "error",
-      "yoda": "error"
-    }
+    "no-trailing-spaces": ["error"],
+    "object-curly-spacing": ["error", "always"],
+    "semi": "off",
+    "space-before-blocks": "error",
+    "space-before-function-paren": [
+      "error",
+      { "anonymous": "never", "named": "never", "asyncArrow": "always" }
+    ],
+    "space-in-parens": "error",
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "spaced-comment": "error",
+    "yoda": "error",
+    "no-empty": "off"
   }
+}

@@ -9,18 +9,18 @@ import winston from "winston";
 import mongoose from "mongoose";
 import "dotenv/config";
 
-import ClientConfig from "Interfaces/ClientConfig";
-import initHandlers from "../Handlers/index.js";
+import ClientConfig from "@/Interfaces/ClientConfig.js";
+import initHandlers from "@/Handlers/index.js";
 
-import Command from "./Command.js";
-import Modal from "./Modal.js";
-import Button from "./Button.js";
-import StringSelect from "./Select/String.js";
-import ChannelSelect from "./Select/Channel.js";
-import RoleSelect from "./Select/Role.js";
-import UserSelect from "./Select/User.js";
-import MentionableSelect from "./Select/Mentionable.js";
-import ContextMenu from "./ContextMenu.js";
+import Command from "@/Structures/Command.js";
+import Modal from "@/Structures/Modal.js";
+import Button from "@/Structures/Button.js";
+import StringSelect from "@/Structures/Select/String.js";
+import ChannelSelect from "@/Structures/Select/Channel.js";
+import RoleSelect from "@/Structures/Select/Role.js";
+import UserSelect from "@/Structures/Select/User.js";
+import MentionableSelect from "@/Structures/Select/Mentionable.js";
+import ContextMenu from "@/Structures/ContextMenu.js";
 
 export default class Client extends BaseClient {
   readonly config: ClientConfig = process.env as unknown as ClientConfig;

@@ -1,4 +1,11 @@
 <h1>Typescript Bot Template <span style="color: #36454F; font-size: 21px;"> by mallusrgreat</span></h1>
+<h2>Features</h2>
+<ul>
+    <li>All types of interactions supported</li>
+    <li>Proper logging system and save logs into file (logs.log)</li>
+    <li>Fully typed</li>
+    <li>Optional MongoDB support</li>
+</ul>
 <p>
 You'll never have to touch the interactionCreate event, ever again.
 Interactions supported:

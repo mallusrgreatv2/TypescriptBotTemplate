@@ -1,3 +1,5 @@
+# MOVED TO https://github.com/mallusrgreatv2/ts-bot-handler
+
 <h1>Typescript Bot Template <span style="color: #36454F; font-size: 21px;"> by mallusrgreat</span></h1>
 <h2>Features</h2>
 <ul>
